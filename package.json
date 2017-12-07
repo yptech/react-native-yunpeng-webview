@@ -1,0 +1,9 @@
+{
+  "name": "react-native-yunpeng-webview",
+  "description": " ",
+  "version": "0.0.1",
+  "main": "index.js",
+  "nativePackage": true,
+  "repository": " ",
+  "license": "MIT"
+}
