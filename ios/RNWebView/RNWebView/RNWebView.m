@@ -344,8 +344,9 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 
     NSMutableDictionary<NSString *, id> *event = [self baseEvent];
     event[@"jsEvaluationValue"] = jsEvaluationValue;
-
-    _onLoadingFinish(event);
+    if (_onLoadingFinish) {
+      _onLoadingFinish(event);
+    }
   }
   // we only need the final 'finishLoad' call so only fire the event when we're actually done loading.
   else if (_onLoadingFinish && !webView.loading && ![webView.request.URL.absoluteString isEqualToString:@"about:blank"]) {
