@@ -10,7 +10,6 @@
 		642080E01FD8EBA400457329 /* RNWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080DF1FD8EBA400457329 /* RNWebView.m */; };
 		642080E11FD8EBA400457329 /* RNWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 642080DE1FD8EBA400457329 /* RNWebView.h */; };
 		642080E91FD8EBE500457329 /* RNWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080E81FD8EBE500457329 /* RNWebViewManager.m */; };
-		6420811E1FD8ED3200457329 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 642080FF1FD8ED2900457329 /* libReact.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6420811E1FD8ED3200457329 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
