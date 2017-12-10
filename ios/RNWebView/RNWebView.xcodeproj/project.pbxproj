@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		642080E01FD8EBA400457329 /* RNWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080DF1FD8EBA400457329 /* RNWebView.m */; };
-		642080E11FD8EBA400457329 /* RNWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 642080DE1FD8EBA400457329 /* RNWebView.h */; };
-		642080E91FD8EBE500457329 /* RNWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080E81FD8EBE500457329 /* RNWebViewManager.m */; };
+		642080E01FD8EBA400457329 /* RCTYPWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080DF1FD8EBA400457329 /* RCTYPWebView.m */; };
+		642080E11FD8EBA400457329 /* RCTYPWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 642080DE1FD8EBA400457329 /* RCTYPWebView.h */; };
+		642080E91FD8EBE500457329 /* RCTYPWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080E81FD8EBE500457329 /* RCTYPWebViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +134,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				642080E11FD8EBA400457329 /* RNWebView.h in CopyFiles */,
+				642080E11FD8EBA400457329 /* RCTYPWebView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +142,10 @@
 
 /* Begin PBXFileReference section */
 		642080DB1FD8EBA400457329 /* libRNWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWebView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		642080DE1FD8EBA400457329 /* RNWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNWebView.h; sourceTree = "<group>"; };
-		642080DF1FD8EBA400457329 /* RNWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNWebView.m; sourceTree = "<group>"; };
-		642080E71FD8EBE500457329 /* RNWebViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWebViewManager.h; sourceTree = "<group>"; };
-		642080E81FD8EBE500457329 /* RNWebViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWebViewManager.m; sourceTree = "<group>"; };
+		642080DE1FD8EBA400457329 /* RCTYPWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTYPWebView.h; sourceTree = "<group>"; };
+		642080DF1FD8EBA400457329 /* RCTYPWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTYPWebView.m; sourceTree = "<group>"; };
+		642080E71FD8EBE500457329 /* RCTYPWebViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTYPWebViewManager.h; sourceTree = "<group>"; };
+		642080E81FD8EBE500457329 /* RCTYPWebViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTYPWebViewManager.m; sourceTree = "<group>"; };
 		642080EB1FD8ED2900457329 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../../../../workspace/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,10 +180,10 @@
 		642080DD1FD8EBA400457329 /* RNWebView */ = {
 			isa = PBXGroup;
 			children = (
-				642080E71FD8EBE500457329 /* RNWebViewManager.h */,
-				642080E81FD8EBE500457329 /* RNWebViewManager.m */,
-				642080DE1FD8EBA400457329 /* RNWebView.h */,
-				642080DF1FD8EBA400457329 /* RNWebView.m */,
+				642080E71FD8EBE500457329 /* RCTYPWebViewManager.h */,
+				642080E81FD8EBE500457329 /* RCTYPWebViewManager.m */,
+				642080DE1FD8EBA400457329 /* RCTYPWebView.h */,
+				642080DF1FD8EBA400457329 /* RCTYPWebView.m */,
 			);
 			path = RNWebView;
 			sourceTree = "<group>";
@@ -397,8 +397,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				642080E01FD8EBA400457329 /* RNWebView.m in Sources */,
-				642080E91FD8EBE500457329 /* RNWebViewManager.m in Sources */,
+				642080E01FD8EBA400457329 /* RCTYPWebView.m in Sources */,
+				642080E91FD8EBE500457329 /* RCTYPWebViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -525,7 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

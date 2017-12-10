@@ -1,8 +1,5 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+'use strict';
 
-import {
-    requireNativeComponent,
-} from 'react-native';
+import WebView from './WebView';
 
-export default requireNativeComponent('RNWebView', null);
+export default WebView;

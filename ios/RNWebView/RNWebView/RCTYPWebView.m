@@ -7,7 +7,7 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "RNWebView.h"
+#import "RCTYPWebView.h"
 
 #import <UIKit/UIKit.h>
 
@@ -23,7 +23,7 @@ NSString *const RNJSNavigationScheme = @"react-js-navigation";
 
 static NSString *const kPostMessageHost = @"postMessage";
 
-@interface RNWebView () <UIWebViewDelegate, RCTAutoInsetsProtocol>
+@interface RCTYPWebView () <UIWebViewDelegate, RCTAutoInsetsProtocol>
 
 @property (nonatomic, copy) RCTDirectEventBlock onLoadingStart;
 @property (nonatomic, copy) RCTDirectEventBlock onLoadingFinish;
@@ -33,7 +33,7 @@ static NSString *const kPostMessageHost = @"postMessage";
 
 @end
 
-@implementation RNWebView
+@implementation RCTYPWebView
 {
   UIWebView *_webView;
   NSString *_injectedJavaScript;
@@ -344,9 +344,8 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 
     NSMutableDictionary<NSString *, id> *event = [self baseEvent];
     event[@"jsEvaluationValue"] = jsEvaluationValue;
-    if (_onLoadingFinish) {
-      _onLoadingFinish(event);
-    }
+
+    _onLoadingFinish(event);
   }
   // we only need the final 'finishLoad' call so only fire the event when we're actually done loading.
   else if (_onLoadingFinish && !webView.loading && ![webView.request.URL.absoluteString isEqualToString:@"about:blank"]) {

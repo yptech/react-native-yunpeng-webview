@@ -9,6 +9,6 @@
 
 #import <React/RCTViewManager.h>
 
-@interface RNWebViewManager : RCTViewManager
+@interface RCTYPWebViewManager : RCTViewManager
 
 @end

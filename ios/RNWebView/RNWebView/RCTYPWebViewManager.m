@@ -7,18 +7,18 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "RNWebViewManager.h"
+#import "RCTYPWebViewManager.h"
 
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 #import "RNWebView.h"
 #import <React/UIView+React.h>
 
-@interface RNWebViewManager () <RNWebViewDelegate>
+@interface RCTYPWebViewManager () <RNWebViewDelegate>
 
 @end
 
-@implementation RNWebViewManager
+@implementation RCTYPWebViewManager
 {
   NSConditionLock *_shouldStartLoadLock;
   BOOL _shouldStartLoad;
