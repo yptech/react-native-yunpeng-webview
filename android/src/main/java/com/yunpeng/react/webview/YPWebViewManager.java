@@ -3,9 +3,11 @@ package com.yunpeng.react.webview;
 import com.facebook.react.views.webview.ReactWebViewManager;
 import com.facebook.react.views.webview.WebViewConfig;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.uimanager.ThemedReactContext;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.SslErrorHandler;
 
 @ReactModule(name = YPWebViewManager.REACT_CLASS)
 public class YPWebViewManager extends ReactWebViewManager {
