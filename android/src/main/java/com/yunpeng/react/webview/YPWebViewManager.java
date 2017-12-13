@@ -10,6 +10,7 @@ import android.net.http.SslError;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.SslErrorHandler;
+import android.content.res.Resources;
 
 @ReactModule(name = YPWebViewManager.REACT_CLASS)
 public class YPWebViewManager extends ReactWebViewManager {
@@ -40,6 +41,7 @@ public class YPWebViewManager extends ReactWebViewManager {
   @Override
   public void setScalesPageToFit(WebView view, boolean enabled) {
     view.getSettings().setUseWideViewPort(enabled);
+    view.getSettings().setLoadWithOverviewMode(enabled);
   }
 
   @Override
