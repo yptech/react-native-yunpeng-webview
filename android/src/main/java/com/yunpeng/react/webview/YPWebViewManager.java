@@ -3,12 +3,12 @@ package com.yunpeng.react.webview;
 import com.facebook.react.views.webview.ReactWebViewManager;
 import com.facebook.react.views.webview.WebViewConfig;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import com.facebook.react.uimanager.annotations.ReactModule;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
 
+import android.net.http.SslError;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.webkit.SslError;
 import android.webkit.SslErrorHandler;
 
 @ReactModule(name = YPWebViewManager.REACT_CLASS)
