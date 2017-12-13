@@ -24,6 +24,11 @@ public class YPWebViewManager extends ReactWebViewManager {
     super(webViewConfig);
   }
 
+  @Override
+  public String getName() {
+    return REACT_CLASS;
+  }
+
   protected static class YPWebViewClient extends ReactWebViewClient {
     @Override
     public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
