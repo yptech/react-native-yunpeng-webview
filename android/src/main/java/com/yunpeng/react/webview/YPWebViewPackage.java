@@ -13,17 +13,17 @@ public class YPWebViewPackage implements ReactPackage {
 
   @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-    return Collections.emptyList();
+    List<ViewManager> modules = new ArrayList<>();
+
+    modules.add(new YPWebViewManager());
+    return modules;
   }
 
   @Override
   public List<NativeModule> createNativeModules(
                               ReactApplicationContext reactContext) {
-    List<NativeModule> modules = new ArrayList<>();
 
-    modules.add(new YPWebViewManager());
-
-    return modules;
+    return Collections.emptyList();
   }
 
 }
