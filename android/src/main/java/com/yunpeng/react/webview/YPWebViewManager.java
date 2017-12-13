@@ -10,6 +10,14 @@ public class YPWebViewManager extends ReactWebViewManager {
 
   protected static final String REACT_CLASS = "RCTYPWebView";
 
+  public ReactWebViewManager() {
+    super();
+  }
+
+  public ReactWebViewManager(WebViewConfig webViewConfig) {
+    super(webViewConfig);
+  }
+
   @ReactProp(name = "scalesPageToFit")
   @Override
   public void setScalesPageToFit(WebView view, boolean enabled) {
