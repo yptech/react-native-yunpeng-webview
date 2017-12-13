@@ -10,11 +10,11 @@ public class YPWebViewManager extends ReactWebViewManager {
 
   protected static final String REACT_CLASS = "RCTYPWebView";
 
-  public ReactWebViewManager() {
+  public YPWebViewManager() {
     super();
   }
 
-  public ReactWebViewManager(WebViewConfig webViewConfig) {
+  public YPWebViewManager(WebViewConfig webViewConfig) {
     super(webViewConfig);
   }
 
