@@ -21,7 +21,7 @@ public class YPWebViewPackage implements ReactPackage {
                               ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
 
-    modules.add(new YPWebViewManager(reactContext));
+    modules.add(new YPWebViewManager());
 
     return modules;
   }
