@@ -14,3 +14,9 @@ yarn add https://github.com/yptech/react-native-yunpeng-webview.git
 ```
 react-native link react-native-cookies
 ```
+
+### Usage
+
+```javascript
+import WebView from 'react-native-yunpeng-webview';
+```
