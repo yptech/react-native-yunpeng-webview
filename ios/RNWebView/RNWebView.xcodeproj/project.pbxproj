@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640FD9A81FE396660094D1F4 /* RCTWebView+WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 640FD9961FE396650094D1F4 /* RCTWebView+WebView.m */; };
 		642080E01FD8EBA400457329 /* RCTYPWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080DF1FD8EBA400457329 /* RCTYPWebView.m */; };
 		642080E11FD8EBA400457329 /* RCTYPWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 642080DE1FD8EBA400457329 /* RCTYPWebView.h */; };
 		642080E91FD8EBE500457329 /* RCTYPWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 642080E81FD8EBE500457329 /* RCTYPWebViewManager.m */; };
@@ -141,6 +142,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		640FD9961FE396650094D1F4 /* RCTWebView+WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTWebView+WebView.m"; sourceTree = "<group>"; };
+		640FD9A71FE396660094D1F4 /* RCTWebView+WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTWebView+WebView.h"; sourceTree = "<group>"; };
 		642080DB1FD8EBA400457329 /* libRNWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWebView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		642080DE1FD8EBA400457329 /* RCTYPWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTYPWebView.h; sourceTree = "<group>"; };
 		642080DF1FD8EBA400457329 /* RCTYPWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTYPWebView.m; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 		642080DD1FD8EBA400457329 /* RNWebView */ = {
 			isa = PBXGroup;
 			children = (
+				640FD9A71FE396660094D1F4 /* RCTWebView+WebView.h */,
+				640FD9961FE396650094D1F4 /* RCTWebView+WebView.m */,
 				642080E71FD8EBE500457329 /* RCTYPWebViewManager.h */,
 				642080E81FD8EBE500457329 /* RCTYPWebViewManager.m */,
 				642080DE1FD8EBA400457329 /* RCTYPWebView.h */,
@@ -399,6 +404,7 @@
 			files = (
 				642080E01FD8EBA400457329 /* RCTYPWebView.m in Sources */,
 				642080E91FD8EBE500457329 /* RCTYPWebViewManager.m in Sources */,
+				640FD9A81FE396660094D1F4 /* RCTWebView+WebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
