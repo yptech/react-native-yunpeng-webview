@@ -7,7 +7,7 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import <React/RCTWebView.h>
+#import "RCTWebView+WebView.h"
 
 @interface RCTYPWebView : RCTWebView
 
