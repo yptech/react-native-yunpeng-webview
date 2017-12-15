@@ -4,7 +4,7 @@ webview extention for react native.
 ### Installation
 
 ```
-yarn add https://github.com/yptech/react-native-yunpeng-webview
+yarn add https://github.com/yptech/react-native-yunpeng-webview.git
 ```
 
 ### Linking
@@ -13,4 +13,10 @@ yarn add https://github.com/yptech/react-native-yunpeng-webview
 
 ```
 react-native link react-native-cookies
+```
+
+### Usage
+
+```javascript
+import WebView from 'react-native-yunpeng-webview';
 ```
