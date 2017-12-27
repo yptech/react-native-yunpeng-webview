@@ -13,6 +13,7 @@ export default class YPWebView extends Component {
   render() {
     return (
       <WebView
+        ref={w => this.webview = w}
         {...this.props}
         nativeConfig={{
           component: RCTYPWebView,
@@ -23,6 +24,10 @@ export default class YPWebView extends Component {
         }}
       />
     );
+  }
+
+  postMessage(data) {
+    this.webview.postMessage(data);
   }
 }
 
